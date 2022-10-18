@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,600,700@display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+	<title>Shopiy</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class='header__container'>
+				<div class="header__logo logo-header">
+					<img src="img/header/logo.png" alt="Логотип">
+					<div class="logo-header__text logo-text">Spopiy</div>
+				</div>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li>
+								<a href="#about" class="menu__link">About</a>
+							</li>
+							<li>
+								<a href="#product" class="menu__link">Product</a>
+							</li>
+							<li>
+								<a href="#service" class="menu__link">Service</a>
+							</li>
+							<li>
+								<a href="#contact" class="menu__link">Contact</a>
+							</li>
+							<li>
+								<a href="#" class="menu__link-button button button__unfilled button-popup"
+									data-path="popup-sign-in">Sign in</a>
+							</li>
+							<li>
+								<a href="#" class="menu__link-button button button-popup" data-path="popup-sign-up">Try free</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu__authorization authorization">
+						<div class="authorization__buttons">
+							<a href="#" class="authorization__button button button__unfilled button-popup"
+								data-path="popup-sign-in">Sign in</a>
+							<a href="#" class="authorization__button button button-popup" data-path="popup-sign-up">Try
+								free</a>
+						</div>
+						<div class="authorization__popups popups">
+							<div class="popups__popup popup">
+								<div class="popup-overlay" data-background="popup-sign-in">
+									<div class="popup__item" data-target="popup-sign-in">
+										<div class="popup__wrapper">
+											<div class="popup__header header-popup">
+												<div class="header-popup__icon">
+													<div class="header-popup__icon-close"></div>
+												</div>
+												<div class="header-popup__logo">
+													<img src="img/header/logo.png" alt="Логотип">
+													<div class="header-popup__text logo-text">Spopiy</div>
+												</div>
+												<div class="header-popup__title">Welcome Back!</div>
+											</div>
+											<div class="popup__body">
+												<div class="popup__input">
+													<iconify-icon icon="carbon:email" class="item-popups__icon"></iconify-icon>
+													<input type="password" required class="item-popups__input">
+													<label for="password" class="item-popups__label">E-mail</label>
+												</div>
+												<div class="popup__input">
+													<iconify-icon icon="akar-icons:key" class="item-popups__icon"></iconify-icon>
+													<input type="password" required class="item-popups__input">
+													<label for="password" class="item-popups__label">Password</label>
+												</div>
+												<a href="#" class="item-popups__button button">Sign In</a>
+											</div>
+											<hr>
+											<div class="popup__footer footer-popup">
+												<div class="footer-popup__text">Don't have an account?
+													<a href="#" class="button-popup" data-path="popup-sign-up">Register</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup-overlay" data-background="popup-sign-up">
+									<div class="popup__item" data-target="popup-sign-up">
+										<div class="popup__wrapper">
+											<div class="popup__header header-popup">
+												<div class="header-popup__icon">
+													<div class="header-popup__icon-close"></div>
+												</div>
+												<div class="header-popup__logo">
+													<img src="img/header/logo.png" alt="Логотип">
+													<div class="header-popup__text logo-text">Spopiy</div>
+												</div>
+												<div class="header-popup__title">Create New<br>Account</div>
+											</div>
+											<div class="popup__body">
+												<div class="popup__input">
+													<iconify-icon icon="carbon:email" class="item-popups__icon"></iconify-icon>
+													<input type="text" required class="item-popups__input">
+													<label for="password" class="item-popups__label">E-mail</label>
+												</div>
+												<div class="popup__input">
+													<iconify-icon icon="akar-icons:key" class="item-popups__icon"></iconify-icon>
+													<input type="password" required class="item-popups__input">
+													<label for="password" class="item-popups__label">Password</label>
+												</div>
+												<div class="popup__input">
+													<iconify-icon icon="akar-icons:key" class="item-popups__icon"></iconify-icon>
+													<input type="password" required class="item-popups__input">
+													<label for="password" class="item-popups__label">Confirm Password</label>
+												</div>
+												<a href="#" class="item-popups__button button">Create Account</a>
+											</div>
+											<div class="popup__footer footer-popup">
+												<div class="footer-popup__text">Have already an account?
+													<a href="#" class="button-popup" data-path="popup-sign-in">Login</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="power">
+				<div class='power__container'>
+					<div class="power__content">
+						<div class="power__header header-content">
+							<div class="power__suptitle suptitle">100% SATISFIED GUARANTEE</div>
+							<div class="power__title title">Power up your<br>shopify products</div>
+							<div class="power__subtitle subtitle">More than 90,000+ companies trust our business. Get help from
+								a
+								dedicated shopify developer today.</div>
+						</div>
+						<div class="power__sign sign-power">
+							<div class="sign-power__body">
+								<div class="sign-power__wrapper">
+									<img src="img/power-up/icon-mail.png" class="sign-power__icon" alt="Иконка">
+									<input type="e-mail" class="sign-power__input input" placeholder="Your email address">
+								</div>
+								<a href="#" class="sign-power__button button button-popup button-input"
+									data-path="popup-sign-up">Sign up</a>
+							</div>
+						</div>
+						<div class="sign-power__options options-sign-power">
+							<div class="options-sign-power__option">
+								<div class="options-sign-power__check">
+									<img src="img/power-up/chech.png" alt="Галочка">
+								</div>
+								<div class="options-sign-power__text">30 days free trial</div>
+							</div>
+							<div class="options-sign-power__option">
+								<div class="options-sign-power__check">
+									<img src="img/power-up/chech.png" alt="Галочка">
+								</div>
+								<div class="options-sign-power__text">No credit card required</div>
+							</div>
+						</div>
+					</div>
+					<div class="power__media _ibg">
+						<img src="img/power-up/man2.png" class="background" alt="Фон">
+						<div class="power__img">
+							<img src="img/power-up/man.png" alt="Фон">
+						</div>
+						<div class="power__decor power__decor-purple"></div>
+						<div class="power__decor power__decor-yellow"></div>
+						<div class="power__offers">
+							<div class="power__offer offer-power offer-power-gorizontal">
+								<div class="offer-power__body-gorizontal">
+									<div class="offer-power__icon offer-power__icon-bg ">
+										<img src="img/power-up/woman.png" alt="Картинка">
+									</div>
+									<div class="offer-power__content offer-power__content-gorizontal">
+										<div class="offer-power__content-info">
+											<div class="offer-power__title offer-title">Margaret Philips</div>
+											<div class="offer-power__subtitle offer-subtitle">Watch our best services</div>
+										</div>
+										<a href="#" class="button-play">
+											<img src="img/power-up/play.png" alt="Иконка">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="power__offer offer-power offer-power-vertical">
+								<div class="offer-power__body-vertical">
+									<div class="offer-power__icon">
+										<img src="img/power-up/plan.png" alt="Картинка">
+									</div>
+									<div class="offer-power__content offer-power__content-vertical">
+										<div class="offer-power__content-info">
+											<div class="offer-power__title offer-title">Make Progress</div>
+											<div class="offer-power__subtitle offer-subtitle">with opening plans</div>
+										</div>
+										<a href="#" class="offer-power__button button">Buy Plan</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services" id="service">
+				<div class='services__container'>
+					<div class="services__media">
+						<img src="img/services/01.png" alt="Изображение">
+					</div>
+					<div class="services__content">
+						<div class="services__header header-content">
+							<div class="services__suptitle suptitle">SERVICES WE PROVIDES</div>
+							<div class="services__title title">Our creative process for your business</div>
+							<div class="services__statistics">
+								<div class="services__statistic statistic-services">
+									<div class="statistic-services__number">5660</div>
+									<div class="statistic-services__text">Product sale per day working and sales</div>
+								</div>
+								<div class="services__statistic statistic-services">
+									<div class="statistic-services__number statistic-services__number-orange">4M+</div>
+									<div class="statistic-services__text">Downloaded saled in your good.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section class="we-do" id="about">
+				<div class='we-do__container'>
+					<div class="we-do__content">
+						<div class="we-do__header header-content">
+							<div class="we-do__suptitle suptitle">WHAT WE DO</div>
+							<div class="we-do__title title">Build on both: Google web stories and AMP website format</div>
+							<div class="we-do__subtitle subtitle">As our motto, we always provide the best service
+								especially
+								for you and your company by growing your company to be better.</div>
+						</div>
+					</div>
+					<div class="we-do__process process-we-do">
+						<div class="process-we-do__wrapper">
+							<div class="process-we-do__items">
+								<div class="process-we-do__item">
+									<div class="process-we-do__icon bg-1">
+										<img src="img/we-do/04.png" alt="Иконка">
+									</div>
+									<div class="process-we-do__title">Grow your traffic</div>
+									<div class="process-we-do__text">We always help your company to grow with us.</div>
+								</div>
+								<div class="process-we-do__item">
+									<div class="process-we-do__icon bg-2">
+										<img src="img/we-do/02.png" alt="Иконка">
+									</div>
+									<div class="process-we-do__title">Content for sales</div>
+									<div class="process-we-do__text">Every company that we handel. We always content more sales.
+									</div>
+								</div>
+							</div>
+							<div class="process-we-do__items">
+								<div class="process-we-do__item">
+									<div class="process-we-do__icon bg-3">
+										<img src="img/we-do/05.png" alt="Иконка">
+									</div>
+									<div class="process-we-do__title">Reporting & analytics</div>
+									<div class="process-we-do__text">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+								</div>
+								<div class="process-we-do__item">
+									<div class="process-we-do__icon bg-4">
+										<img src="img/we-do/03.png" alt="Иконка">
+									</div>
+									<div class="process-we-do__title">Better Conversion</div>
+									<div class="process-we-do__text">We always help your company to grow with us.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products" id="product">
+				<div class='products__container'>
+					<div class="products__media">
+						<img src="img/products/01.png" alt="Изображение">
+					</div>
+					<div class="products__content">
+						<div class="products__header content-header">
+							<div class="products__suptitle suptitle">OUR PRODUCT STORIES</div>
+							<div class="products__title title">Why product stories? Learn more</div>
+						</div>
+						<div class="products__stories">
+							<div class="products__story story-products">
+								<div class="story-products__icon">
+									<a href="#"><img src="img/products/02.png" alt="Иконка"></a>
+								</div>
+								<div class="story-products__text">
+									<div class="story-products__title">SEO optimized, high Google work</div>
+									<div class="story-products__subtitle">Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry.</div>
+								</div>
+							</div>
+							<div class="products__story story-products">
+								<div class="story-products__icon">
+									<a href="#"><img src="img/products/02.png" alt="Иконка"></a>
+								</div>
+								<div class="story-products__text">
+									<div class="story-products__title">Fast loading, low bounce rates</div>
+									<div class="story-products__subtitle">It is a long established fact that a reader will be
+										distracted by the readable content</div>
+								</div>
+							</div>
+							<div class="products__story story-products">
+								<div class="story-products__icon">
+									<a href="#"><img src="img/products/02.png" alt="Иконка"></a>
+								</div>
+								<div class="story-products__text">
+									<div class="story-products__title">SEO optimized, high Google work</div>
+									<div class="story-products__subtitle">Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="creative">
+				<div class='creative__container'>
+					<div class="creative__content">
+						<div class="creative__header header-content">
+							<div class="creative__suptitle suptitle">CREATIVE PROCESS</div>
+							<div class="creative__title title">Know your ads inside & out-perform</div>
+							<div class="creative__subtitle subtitle">Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+								1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+								book. It has survived not only five centuries,</div>
+						</div>
+					</div>
+					<div class="creative__media">
+						<img src="img/creative/01.png" alt="Изображение">
+						<div class="creative__clients">
+							<div class="creative__clients-title">Satisfied Clients</div>
+							<img src="img/creative/02.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact" id="contact">
+				<div class='contact__container'>
+					<div class="contact__content">
+						<div class="contact__header header-content">
+							<div class="contact__title title">Contact with us.</div>
+							<div class="contact__subtitle subtitle">More than 50,000+ companies trusted our business</div>
+						</div>
+						<div class="contact__input-block">
+							<div class="contact__body">
+								<div class="contact__wrapper">
+									<input type="e-mail" class="contact__input input" placeholder="Type your messages..">
+								</div>
+								<a href="#" class="contact__button button button-popup button-input">Get Started</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	</div>
+	</section>
+	</main>
+	</div>
+	<footer class="footer">
+		<div class='footer__container'>
+			<div class="footer__logo logo-footer">
+				<img src="img/header/logo.png" alt="Логотип">
+				<div class="logo-footer__text logo-text">Spopiy</div>
+			</div>
+			<div class="footer__menu menu">
+				<nav class="menu__body-footer">
+					<ul class="menu__list-footer">
+						<li>
+							<a href="#" class="menu__link-footer">About</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link-footer">Product</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link-footer">Service</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link-footer">Contact</a>
+						</li>
+					</ul>
+					<ul class="menu-icons__list">
+						<li>
+							<a href="https://www.facebook.com" class="menu-icon__link">
+								<iconify-icon icon="fa6-brands:facebook-f"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com" class="menu-icon__link">
+								<iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com" class="menu-icon__link">
+								<iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com" class="menu-icon__link">
+								<iconify-icon icon="akar-icons:linkedin-fill"></iconify-icon>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
