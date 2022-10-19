@@ -1530,7 +1530,7 @@ body._lock {
 	
 	.item-popups__input {
 		max-width: 200px;
-		border-radius: unset;
+		border-radius: 0px;
 	}
 
 	.menu__body-footer {
