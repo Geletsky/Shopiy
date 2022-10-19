@@ -26,6 +26,9 @@ buttons.forEach(function (e) {
 		document.querySelector(`[data-target="${path}"]`).classList.toggle('_active');
 		document.querySelector(`[data-background="${path}"]`).classList.toggle('_active');
 		const menuBodyActive = document.querySelector('.menu__body._active');
+		window.onscroll = function() {
+			return false;
+		};
 		if (menuBodyActive) {
 			iconMenu.classList.remove('_active');
 			menuBody.classList.remove('_active');
