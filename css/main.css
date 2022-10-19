@@ -1548,6 +1548,10 @@ body._lock {
 	.contact {
 		margin: 172px 0px 80px 0px;
 	}
+	
+	.popup__item {
+	border-radius: 0px;
+}
 
 	.header__container {
 		min-height: 80px;
