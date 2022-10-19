@@ -1527,6 +1527,11 @@ body._lock {
 	.footer__container {
 		flex-direction: column;
 	}
+	
+	.item-popups__input {
+		max-width: 200px;
+		border-radius: unset;
+	}
 
 	.menu__body-footer {
 		flex-direction: column;
@@ -1564,11 +1569,6 @@ body._lock {
 
 	.authorization__buttons {
 		display: none;
-	}
-
-	.item-popups__input {
-		max-width: 200px;
-		border-radius: unset;
 	}
 
 	.popup__item {
