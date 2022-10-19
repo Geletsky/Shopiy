@@ -1567,7 +1567,8 @@ body._lock {
 	}
 
 	.item-popups__input {
-		max-width: 150px;
+		max-width: 200px;
+		border-radius: unset;
 	}
 
 	.popup__item {
