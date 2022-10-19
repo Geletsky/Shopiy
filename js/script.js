@@ -22,19 +22,20 @@ buttons.forEach(function (e) {
 				e.classList.remove('_active');
 			})
 		});
+		document.body.classList.add('_lock');
 		document.querySelector(`[data-target="${path}"]`).classList.toggle('_active');
 		document.querySelector(`[data-background="${path}"]`).classList.toggle('_active');
 		const menuBodyActive = document.querySelector('.menu__body._active');
 		if (menuBodyActive) {
 			iconMenu.classList.remove('_active');
 			menuBody.classList.remove('_active');
-			document.body.classList.remove('_lock');
 		}
 
 		popupClose.forEach(function (e) {
 			e.addEventListener('click', function (e) {
 				console.log('click')
 				const popupOverlayActive = document.querySelector('.popup-overlay._active');
+				document.body.classList.remove('_lock');
 				popupOverlayActive.classList.remove('_active');
 				popups.forEach(function (e) {
 					e.classList.remove('_active');
