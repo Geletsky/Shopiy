@@ -49,6 +49,7 @@ buttons.forEach(function (e) {
 		const popupOverlayActive = document.querySelector('.popup-overlay._active');
 		popupOverlayActive.addEventListener('click', function (e) {
 			if (e.target == popupOverlayActive) {
+				document.body.classList.remove('_lock');
 				popupOverlayActive.classList.remove('_active');
 				popups.forEach(function (e) {
 					e.classList.remove('_active');
